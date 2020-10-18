@@ -4,7 +4,8 @@ source: https://github.com/theAIGuysCode/yolov4-custom-functions
 
 ## Steps to run:
 1. Clone the repo
-2. Get pre-trained weight (wget https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.weights)
+#### Get pre-trained weight
+2. wget https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.weights
 3. %cd /content/Yolov4-with-class-count
 ##### convert pre-trained weight to Tensorflow format
 4. !python save_model.py --weights /content/yolov4.weights --output ./checkpoints/yolov4-416 --input_size 416 --model yolov4 
