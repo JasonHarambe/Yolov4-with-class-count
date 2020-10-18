@@ -4,7 +4,7 @@ source: https://github.com/theAIGuysCode/yolov4-custom-functions
 
 ## Steps to run:
 1. Clone the repo
-#### Get pre-trained weight
+##### Get pre-trained weight
 2. wget https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.weights
 3. %cd /content/Yolov4-with-class-count
 ##### convert pre-trained weight to Tensorflow format
@@ -15,5 +15,11 @@ source: https://github.com/theAIGuysCode/yolov4-custom-functions
 
 ### image
 !python detect.py --weights ./checkpoints/yolov4-416 --size 416 --model yolov4 --image ./data/kite.jpg --output /content/result.jpg --count
+\
+\
+![image output](result.jpg)
 ### video
 !python detectvideo.py --weights ./checkpoints/yolov4-416 --size 416 --model yolov4 --video /content/demo.mp4 --output /content/result.avi --count
+\
+\
+![video output](demo.gif)
